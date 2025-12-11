@@ -1,14 +1,17 @@
-    1  sudo apt-get update
-    2  sudo apt-get install git build-essential gdb-multiarch qemu-system-misc gcc-riscv64-linux-gnu binutils-riscv64-linux-gnu
-    3  git clone git://g.csail.mit.edu/xv6-labs-2023
-    4  riscv64-linux-gnu-gcc --version
-    5  cd ~/xv6-labs-2023
-    6  nano user/sleep.c
-    7  nano makeFile
-    8  nano Makefile
-    9  make clean 
-   10  make qemu
-   11  nano user/sleep.c
-   12  make clean 
-   13  make qemu
-   14  history > worksheet1.log
+    1  cd ~/cs149
+    2  ls
+    3  cd ~/xv6-labs-2023
+    4  ls
+    5  git config --global user.email
+    6  git config --global user.name
+    7  git config --global user.email "yanin.arevalos@sjsu.edu"
+    8  git config --global user.name "Yanin Arevalos"
+    9  cd ~/cs149
+   10  git status
+   11  git commit -m "WS_bonus files"
+   12  git push -u origin main
+   13  cd ~/xv6-labs-2023
+   14  make qemu
+   15  ./grade-lab-util sleep
+   16  history > cd ~/xv6-labs-2023
+   17  history > worksheet1.log
