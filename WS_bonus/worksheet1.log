@@ -1,0 +1,14 @@
+    1  sudo apt-get update
+    2  sudo apt-get install git build-essential gdb-multiarch qemu-system-misc gcc-riscv64-linux-gnu binutils-riscv64-linux-gnu
+    3  git clone git://g.csail.mit.edu/xv6-labs-2023
+    4  riscv64-linux-gnu-gcc --version
+    5  cd ~/xv6-labs-2023
+    6  nano user/sleep.c
+    7  nano makeFile
+    8  nano Makefile
+    9  make clean 
+   10  make qemu
+   11  nano user/sleep.c
+   12  make clean 
+   13  make qemu
+   14  history > worksheet1.log
