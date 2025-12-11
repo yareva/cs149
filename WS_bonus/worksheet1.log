@@ -15,3 +15,11 @@
    15  ./grade-lab-util sleep
    16  history > cd ~/xv6-labs-2023
    17  history > worksheet1.log
+   18  head worksheet1.log
+   19  cp worksheet1.log ~/cs149/WS_bonus
+   20  cd ~/cs149/WS_bonus
+   21  git add worksheet1.log
+   22  git commit -m "Final submission with all test results"
+   23  git push origin main
+   24  cd ~/xv6-labs-2023
+   25  history > worksheet1.log
